@@ -91,7 +91,7 @@ nav a {
     background-color: #add8e6; /* Light blue background */
     padding: 20px;
     text-align: center;
-    justify-content: center;
+    font-family: 'Lateef', cursive; /* Lateef font for Arabic and Latin scripts */
 }
 
 .footer {
@@ -99,14 +99,12 @@ nav a {
     padding: 20px;
     text-align: center;
     color: #6b1010;
-    justify-content: center;
 }
 
 .footer-nav {
     background-color: #1b0c0c; /* Dark reddish-brown */
     padding: 10px;
     text-align: center;
-    justify-content: center;
 }
 
 .footer-nav a {
@@ -115,5 +113,4 @@ nav a {
     padding: 15px;
     margin: 0 10px;
     font-size: 18px;
-    justify-content: center;
 }
