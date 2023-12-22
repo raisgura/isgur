@@ -2,10 +2,11 @@ body {
     margin: 0;
     font-family: 'Georgia', serif; /* Change to a different font family, e.g., Georgia */
     background-color: #637c19; /* Dark grayish green */
+    color: #ffffff; /* White text color for the body */
 }
 
 header {
-    background-color: #1a1a1a; /* Dark yellowish-brown */
+    background-color: #ffffff; /* White */
     color: #6b1010;
     padding: 15px;
     text-align: center;
@@ -32,7 +33,7 @@ nav a {
     font-size: 18px; /* Increase font size */
 }
 
-main {
+.main {
     text-align: center;
     padding: 20px;
 }
@@ -61,7 +62,38 @@ main {
     transform: scale(1.05);
 }
 
-.portfolio-info {
-    color: #ffffff; /* White text color for portfolio info */
-    font-size: 20px; /* Increase font size for portfolio info */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.contact-icon {
+    margin: 0 10px;
+}
+
+.contact-icon img {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+}
+
+.footer {
+    background-color: #1a1a1a; /* Dark yellowish-brown */
+    padding: 20px;
+    text-align: center;
+    color: #6b1010;
+}
+
+.footer-nav {
+    background-color: #1b0c0c; /* Dark reddish-brown */
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-nav a {
+    color: #2eb27d; /* Turquoise green */
+    text-decoration: none;
+    padding: 15px;
+    margin: 0 10px;
+    font-size: 18px; /* Increase font size */
 }
