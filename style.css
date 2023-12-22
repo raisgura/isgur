@@ -1,116 +1,90 @@
-body {
+/* Reset some default styles */
+body, h1, h2, p {
     margin: 0;
-    font-family: 'Georgia', serif;
-    background-color: #f0f0f0; /* Light gray background */
-    color: #333333; /* Dark gray text color */
+    padding: 0;
 }
 
+/* Global Styles */
+body {
+    font-family: 'Rockwell', sans-serif;
+}
+
+h1 {
+    font-family: 'Rockwell', sans-serif;
+}
+
+/* Motivational Text Style */
+.footer-text p {
+    font-family: 'Trajan', sans-serif;
+}
+
+/* Header Styles */
 header {
-    background-color: #ffffff; /* White header background */
-    color: #6b1010;
-    padding: 15px;
+    background-color: #f0f0f0;
+    padding: 20px;
     text-align: center;
 }
 
 .logo {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
 }
 
+/* Navigation Styles */
 nav {
-    background-color: #1b0c0c; /* Dark reddish-brown */
-    padding: 10px;
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 10px;
 }
 
 nav a {
-    color: #2eb27d; /* Turquoise green */
+    color: white;
     text-decoration: none;
-    padding: 15px;
-    margin: 0 10px;
-    font-size: 18px;
+    margin: 0 15px;
 }
 
-.main {
-    text-align: center;
+/* Main Content Styles */
+main {
     padding: 20px;
 }
 
-.portfolio {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .portfolio-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
     margin: 10px;
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-}
-
-.portfolio-item:hover {
-    transform: scale(1.05);
 }
 
 .contact-icons {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 20px;
 }
 
-.contact-icon {
-    margin: 0 10px;
-}
-
 .contact-icon img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
-.contact-info {
-    background-color: #ffb6c1; /* Light pink background */
+.contact-details {
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
 }
 
-.contact-info p {
-    margin: 10px 0;
-}
-
-.motivational-text {
-    background-color: #add8e6; /* Light blue background */
-    padding: 20px;
-    text-align: center;
-    font-family: 'Lateef', cursive; /* Lateef font for Arabic and Latin scripts */
-}
-
-.footer {
-    background-color: #1a1a1a; /* Dark yellowish-brown */
-    padding: 20px;
-    text-align: center;
-    color: #6b1010;
-}
-
+/* Footer Navigation Styles */
 .footer-nav {
-    background-color: #1b0c0c; /* Dark reddish-brown */
-    padding: 10px;
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 10px;
 }
 
 .footer-nav a {
-    color: #2eb27d; /* Turquoise green */
+    color: white;
     text-decoration: none;
-    padding: 15px;
-    margin: 0 10px;
-    font-size: 18px;
+    margin: 0 15px;
 }
