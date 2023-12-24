@@ -60,8 +60,8 @@ main {
 }
 
 .contact-icon img {
-    width: 30px;
-    height: 30px;
+    max-width: 100%; /* Ensures images scale within the container */
+    height: auto; /* Maintains aspect ratio */
 }
 
 .contact-details {
