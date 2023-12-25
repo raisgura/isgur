@@ -1,39 +1,44 @@
-function like() {
-    alert("Anda memberikan like!");
+// Function to handle page transitions
+function changePage(page) {
+    const content = document.getElementById('content');
+    content.classList.add('fade-out');
+
+    setTimeout(() => {
+        // You can implement page change logic here
+        // For simplicity, let's just reload the page
+        window.location.reload();
+    }, 500); // Wait for 0.5 seconds before reloading
 }
 
-function showComments(event) {
-    var commentsSection = event.currentTarget.parentNode.querySelector('.comments');
-    commentsSection.style.display = (commentsSection.style.display === 'none' || commentsSection.style.display === '') ? 'block' : 'none';
+// Function to handle navigation menu styling
+function setActiveNav(currentPage) {
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.textContent.trim().toUpperCase() === currentPage.toUpperCase()) {
+            link.classList.add('active');
+        }
+    });
 }
 
-function share() {
-    alert("Anda membagikan proyek ini!");
+// Function to handle content fade-in after transition
+function handleContentFadeIn() {
+    const content = document.getElementById('content');
+    content.classList.remove('fade-out');
 }
 
-function reactLove() {
-    alert("Anda memberikan love reaction!");
-}
+// Add event listeners for page load and content fade-in
+document.addEventListener('DOMContentLoaded', () => {
+    setActiveNav('Home'); // Set initial active state based on the current page
+    handleContentFadeIn(); // Handle content fade-in on page load
+});
 
-// Menampilkan overlay pada item portofolio saat dihover
-function showOverlay(element) {
-    var overlay = element.querySelector('.overlay');
-    overlay.style.opacity = '1';
-}
-
-// Menyembunyikan overlay pada item portofolio saat tidak dihover
-function hideOverlay(element) {
-    var overlay = element.querySelector('.overlay');
-    overlay.style.opacity = '0';
-}
-
-// Menggunakan event delegation untuk menangani klik pada item portofolio
-document.addEventListener('click', function(event) {
-    var target = event.target;
-
-    // Menangani klik pada item portofolio
-    if (target.classList.contains('portfolio-item')) {
-        alert("Anda mengklik item portofolio!");
-        // Tambahkan tindakan khusus yang ingin Anda lakukan saat item portofolio diklik
+// Add event listener for navigation clicks
+document.addEventListener('click', (event) => {
+    if (event.target.tagName === 'A' && event.target.getAttribute('href').startsWith('#')) {
+        event.preventDefault(); // Prevent default link behavior
+        const page = event.target.textContent.trim();
+        changePage(page); // Call the changePage function on navigation click
+        setActiveNav(page); // Set active state for the clicked link
     }
 });
