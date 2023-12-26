@@ -6,7 +6,7 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #cc5ed0;
     color: #fff;
 }
 
@@ -41,7 +41,7 @@ article {
 }
 
 h2 {
-    color: #333;
+    color:#3498db;
 }
 
 p {
