@@ -31,7 +31,9 @@ header {
 }
 
 .rais {
-    color: white;
+    color: rgb(0, 179, 255);
+    margin-top: 40px;
+    font-size: 40Px;
 }
 
 /* Media queries untuk tampilan desktop */
@@ -46,14 +48,10 @@ header {
 
     .rais {
         font-size: 50px; /* Sesuaikan ukuran font untuk tampilan desktop */
+        
     }
 }
 
-h1 {
-    margin-top: 40px;
-    color: #ffffff;
-    font-size: 40Px;
-}
 
 
 nav {
@@ -67,7 +65,7 @@ nav {
   nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #3498db; /* Ubah warna teks menjadi putih */
+    color: #cc5ed0; /* Ubah warna teks menjadi putih */
     transition: transform 0.3s ease-out;
     position: relative; /* Tambahkan posisi relatif untuk elemen yang bersifat absolut */
   }
@@ -97,7 +95,7 @@ nav {
 
 .saya{
     position: auto;
-    font-size: 30px;
+    font-size: 35px;
     color: #3498db;
     font-style:bold italic;
     margin: 15px;
