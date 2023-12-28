@@ -1,0 +1,98 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background-color:  #007BFF;
+    padding: 30px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header nav a {
+    display: inline-block;
+    color:#ffffff;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 2px;
+    font-size: 20px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px; /* Sesuaikan ukuran sesuai kebutuhan */
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #fff; /* Atur tebal dan warna border sesuai keinginan */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: rotate(360deg);
+}
+
+.header-content{
+    color: #f8f9fa;
+    padding: 2vh;
+    font-weight: bold;
+}
+
+.kelas-1 {
+    font-weight: bold;
+    color: #000000;
+    font-size: 24px;
+}
+
+.kelas-2 {
+    font-style: italic;
+    color: #ffffff;
+    font-size:30px;
+}
+
+/* 000 */
+h1, h2 {
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000000;
+}
